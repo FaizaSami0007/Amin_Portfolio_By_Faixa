@@ -24,7 +24,7 @@ export const Gallery: React.FC = () => {
       year: "2026",
       imageSrc: portfolioImages.pepWorkshop.src,
       fallbackText: "PEP Workshop Session",
-      alt: "Amin Jan coordinating a youth startup bootcamp workshop",
+      alt: "Amin Jan with leaders and participants at Peshawar Entrepreneurship Program (PEP) certificate ceremony",
       caption: "Interactive hands-on bootcamp mentoring 40+ student entrepreneurs on digital venture creation.",
       category: "Entrepreneurship",
       isLarge: false,
@@ -133,7 +133,7 @@ export const Gallery: React.FC = () => {
               >
                 <div className="flex flex-col sm:flex-row gap-4 p-3 items-center">
                   <div className="relative aspect-[4/3] w-full sm:w-36 shrink-0 overflow-hidden rounded-xl bg-[#082C4A]">
-                    {item.imageSrc && item.imageSrc.endsWith(".png") ? (
+                    {item.imageSrc && item.id !== "susi-moment" ? (
                       <img
                         src={item.imageSrc}
                         alt={item.alt}

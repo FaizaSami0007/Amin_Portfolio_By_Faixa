@@ -29,12 +29,12 @@ export const portfolioImages: Record<string, PortfolioImage> = {
   },
   pepWorkshop: {
     src: "/images/pep/amin-pep-workshop.jpg",
-    alt: "Amin Jan facilitating Peshawar Entrepreneurship Program (PEP) workshop",
+    alt: "Amin Jan with leaders and participants at Peshawar Entrepreneurship Program (PEP) certificate ceremony",
     caption: "Peshawar Entrepreneurship Program (PEP) • 2026",
-    context: "Flagship PEP Case Study Delivery",
+    context: "Flagship PEP Case Study Delivery and Certificate Ceremony",
     year: "2026",
     section: "pep",
-    status: "pending_client_supply",
+    status: "verified",
   },
   susiExchange: {
     src: "/images/international/amin-susi-umass.jpg",
