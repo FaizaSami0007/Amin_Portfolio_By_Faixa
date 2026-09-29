@@ -85,10 +85,9 @@ export const Footer: React.FC<FooterProps> = ({ config }) => {
           </div>
         </div>
 
-        {/* Copyright & Technical Attribution */}
+        {/* Copyright */}
         <div className="mt-8 border-t border-white/10 pt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs text-[#DCEEFF]/60">
           <p>© {new Date().getFullYear()} Amin Jan. All rights reserved.</p>
-          <p>Human-Centered Professional Portfolio • Built with React &amp; TypeScript</p>
         </div>
       </Container>
     </footer>
