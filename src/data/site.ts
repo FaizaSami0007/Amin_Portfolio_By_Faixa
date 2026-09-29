@@ -26,6 +26,11 @@ export const siteConfig: SiteConfig = {
       url: "https://www.linkedin.com/in/amin-jan1/",
       label: "Connect with Amin Jan on LinkedIn",
     },
+    {
+      platform: "Instagram",
+      url: "https://www.instagram.com/iamaminjan?stkn=YWhkNjNlajZjbjZ4",
+      label: "Follow Amin Jan on Instagram",
+    },
   ],
   trustSignals: [
     {

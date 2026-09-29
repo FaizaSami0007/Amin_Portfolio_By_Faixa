@@ -52,7 +52,7 @@ export const HeroActions: React.FC<HeroActionsProps> = ({ linkedinUrl }) => {
           <Twitter className="h-4 w-4" />
         </a>
         <a
-          href="https://instagram.com/"
+          href="https://www.instagram.com/iamaminjan?stkn=YWhkNjNlajZjbjZ4"
           target="_blank"
           rel="noreferrer noopener"
           className="p-1.5 rounded-md text-[#102A43] transition-colors hover:text-[#1769AA] focus-visible:outline-2"
