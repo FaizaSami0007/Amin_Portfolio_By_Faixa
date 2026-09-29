@@ -102,6 +102,26 @@ body {
   padding-bottom: clamp(64px, 10vw, 112px);
 }
 
+/* Horizontal Moving Practice Rail Animation */
+@keyframes practiceRail {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-practice-rail {
+  animation: practiceRail 48s linear infinite;
+  will-change: transform;
+}
+
+.animate-practice-rail:hover,
+.rail-viewport:hover .animate-practice-rail {
+  animation-play-state: paused;
+}
+
 /* Motion Preferences */
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -115,5 +135,10 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .animate-practice-rail {
+    animation: none !important;
+    transform: none !important;
   }
 }

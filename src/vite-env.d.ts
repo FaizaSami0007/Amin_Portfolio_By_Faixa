@@ -49,4 +49,7 @@ declare module "lucide-react" {
   export const Instagram: LucideIcon;
   export const Download: LucideIcon;
   export const Quote: LucideIcon;
+  export const Pause: LucideIcon;
+  export const Play: LucideIcon;
 }
+

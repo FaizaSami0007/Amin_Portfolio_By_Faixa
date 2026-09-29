@@ -6,16 +6,16 @@ export const coreAreasData: CoreArea[] = [
     title: "Youth Leadership",
     description:
       "Empowering young minds through civic leadership training, youth parliament forums, and structured decision-making platforms.",
-    focusHighlights: ["Civic Participation", "Youth Delegations", "Policy Advocacy"],
+    focusHighlights: ["Civic Leadership", "Youth Forums", "Policy Advocacy"],
     linkHref: "#journey",
-    linkLabel: "View leadership experiences",
+    linkLabel: "Explore leadership journey",
   },
   {
     id: "entrepreneurship",
     title: "Entrepreneurship & Innovation",
     description:
       "Coordinating startup bootcamps, practical venture design workshops, and industry mentoring for emerging student founders.",
-    focusHighlights: ["Bootcamp Coordination", "Incubation Mentoring", "Peshawar PEP"],
+    focusHighlights: ["Startup Bootcamps", "Venture Design", "Student Mentorship"],
     linkHref: "#impact",
     linkLabel: "Explore entrepreneurship work",
   },
@@ -24,7 +24,7 @@ export const coreAreasData: CoreArea[] = [
     title: "Community Development",
     description:
       "Designing grassroots initiatives that bridge community needs with institutional resources, volunteer programs, and civic action.",
-    focusHighlights: ["Grassroots Organizing", "UN Volunteers", "Civic Projects"],
+    focusHighlights: ["Grassroots Organizing", "Civic Programs", "Community Action"],
     linkHref: "#journey",
     linkLabel: "See community initiatives",
   },
@@ -33,7 +33,7 @@ export const coreAreasData: CoreArea[] = [
     title: "Education & Capacity Building",
     description:
       "Facilitating skills workshops, academic tutoring, research literacy, and interactive training across high schools and universities.",
-    focusHighlights: ["Workshop Delivery", "Curriculum Facilitation", "Student Mentorship"],
+    focusHighlights: ["Skills Workshops", "Academic Tutoring", "Research Literacy"],
     linkHref: "#journey",
     linkLabel: "Review education programs",
   },
@@ -42,7 +42,7 @@ export const coreAreasData: CoreArea[] = [
     title: "Climate Action & Sustainability",
     description:
       "Engaging youth in climate advocacy, environmental literacy, and sustainability dialogues with local and international stakeholders.",
-    focusHighlights: ["Environmental Dialogues", "Youth Climate Cohorts", "Local Advocacy"],
+    focusHighlights: ["Climate Advocacy", "Environmental Literacy", "Sustainability"],
     linkHref: "#journey",
     linkLabel: "Discover climate initiatives",
   },
@@ -50,8 +50,8 @@ export const coreAreasData: CoreArea[] = [
     id: "international-engagement",
     title: "International Engagement",
     description:
-      "Bridging cross-cultural exchange through U.S. State Department programs (SUSI 2024), YSALI, and global alumni networks.",
-    focusHighlights: ["SUSI 2024 Fellowship", "PUAN Network", "Global Exchange"],
+      "Bridging cross-cultural exchange through U.S. State Department programs, SUSI, YSALI, and global alumni networks.",
+    focusHighlights: ["U.S. State Dept", "SUSI & YSALI", "Global Alumni"],
     linkHref: "#recognition",
     linkLabel: "Explore international programs",
   },
