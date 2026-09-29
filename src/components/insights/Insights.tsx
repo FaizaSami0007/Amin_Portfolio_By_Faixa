@@ -24,7 +24,7 @@ export const Insights: React.FC<InsightsProps> = ({ insights }) => {
             </Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#102A43] sm:text-4xl lg:text-[42px] leading-tight">
               Reflections from the{" "}
-              <span className="font-editorial font-normal italic text-[#0B3A63]">
+              <span className="font-editorial font-normal italic text-[#1769AA]">
                 field and journey.
               </span>
             </h2>

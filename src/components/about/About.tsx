@@ -25,7 +25,7 @@ export const About: React.FC<AboutProps> = ({ data }) => {
 
               <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#102A43] sm:text-4xl lg:text-[42px] leading-[1.12]">
                 {data.headline}{" "}
-                <span className="font-editorial font-normal italic text-[#0B3A63]">
+                <span className="font-editorial font-normal italic text-[#1769AA]">
                   {data.headlineEditorial}
                 </span>
               </h2>

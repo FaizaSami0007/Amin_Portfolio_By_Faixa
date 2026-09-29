@@ -36,7 +36,7 @@ export const Impact: React.FC<ImpactProps> = ({ caseStudies }) => {
             </Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#102A43] sm:text-4xl lg:text-[42px] leading-tight">
               What the work{" "}
-              <span className="font-editorial font-normal italic text-[#0B3A63]">
+              <span className="font-editorial font-normal italic text-[#1769AA]">
                 actually involved.
               </span>
             </h2>

@@ -24,7 +24,7 @@ export const CoreAreas: React.FC<CoreAreasProps> = ({ areas }) => {
             </Badge>
             <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#102A43] sm:text-4xl lg:text-[40px] leading-tight">
               Where I focus my time, curiosity, and{" "}
-              <span className="font-editorial font-normal italic text-[#0B3A63]">
+              <span className="font-editorial font-normal italic text-[#1769AA]">
                 community energy.
               </span>
             </h2>
