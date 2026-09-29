@@ -20,9 +20,9 @@ export const portfolioImages: Record<string, PortfolioImage> = {
   },
   about: {
     src: "/images/about/amin-jan-about.png",
-    alt: "Amin Jan in conversation and community engagement",
-    caption: "Grounded in community engagement and youth mentoring",
-    context: "About narrative overview",
+    alt: "Amin Jan receiving recognition for youth leadership and community engagement",
+    caption: "Active across youth leadership, mentorship & community capacity building",
+    context: "About narrative - leadership recognition ceremony",
     year: "2025",
     section: "about",
     status: "verified",

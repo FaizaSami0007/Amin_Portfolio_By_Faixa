@@ -64,7 +64,7 @@ export const About: React.FC<AboutProps> = ({ data }) => {
                 <div className="relative aspect-[16/11] w-full overflow-hidden rounded-[14px] bg-[#EDF6FF]">
                   <img
                     src="/images/about/amin-jan-about.png"
-                    alt="Amin Jan in conversation and educational mentoring"
+                    alt="Amin Jan receiving recognition for youth leadership and community service"
                     className="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-[1.02]"
                     loading="lazy"
                   />
