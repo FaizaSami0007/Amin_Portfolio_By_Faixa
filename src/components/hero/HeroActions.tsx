@@ -19,8 +19,12 @@ export const HeroActions: React.FC<HeroActionsProps> = ({ linkedinUrl }) => {
         </a>
 
         <a
-          href="#contact"
+          href="/documents/Amin_Jan_CV.pdf"
+          download="Amin_Jan_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex items-center justify-center gap-2 rounded-lg border border-[#D9E7F2] bg-[#FFFFFF] px-5 py-2.5 sm:px-5.5 sm:py-3 text-xs sm:text-sm font-semibold text-[#102A43] shadow-xs transition-all duration-200 hover:bg-[#EDF6FF] hover:border-[#4A9FE3] active:scale-[0.99] focus-visible:outline-2"
+          aria-label="Download Amin Jan's CV (PDF)"
         >
           <span>Download CV</span>
           <Download className="h-3.5 w-3.5 text-[#52677A] transition-transform duration-200 group-hover:translate-y-0.5" />

@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
   shortBio:
     "Amin Jan is a youth leader and educator working across leadership, entrepreneurship, community development, education, and youth engagement.",
   location: "Peshawar, Pakistan",
-  email: "aminjan.official@example.com", // [Verification required: Client's preferred official email]
+  email: "aminjan5225@gmail.com",
   linkedin: "https://www.linkedin.com/in/amin-jan1/",
   navItems: [
     { label: "About", href: "#about" },
