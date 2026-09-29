@@ -36,7 +36,7 @@ export const Gallery: React.FC = () => {
       year: "2024",
       imageSrc: portfolioImages.susiExchange.src,
       fallbackText: "SUSI Cohort at UMass Amherst",
-      alt: "Study of the U.S. Institutes exchange fellowship at UMass Amherst",
+      alt: "Amin Jan during the Study of the U.S. Institutes (SUSI) leadership exchange at University of Massachusetts Amherst",
       caption: "Academic seminars on public policy, civic engagement, and leadership frameworks.",
       category: "International Exchange",
       isLarge: false,
@@ -133,11 +133,11 @@ export const Gallery: React.FC = () => {
               >
                 <div className="flex flex-col sm:flex-row gap-4 p-3 items-center">
                   <div className="relative aspect-[4/3] w-full sm:w-36 shrink-0 overflow-hidden rounded-xl bg-[#082C4A]">
-                    {item.imageSrc && item.id !== "susi-moment" ? (
+                    {item.imageSrc ? (
                       <img
                         src={item.imageSrc}
                         alt={item.alt}
-                        className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                        className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                       />
                     ) : (

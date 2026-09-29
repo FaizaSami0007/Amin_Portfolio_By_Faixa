@@ -38,12 +38,12 @@ export const portfolioImages: Record<string, PortfolioImage> = {
   },
   susiExchange: {
     src: "/images/international/amin-susi-umass.jpg",
-    alt: "Amin Jan participating in SUSI exchange program at University of Massachusetts Amherst",
+    alt: "Amin Jan during the Study of the U.S. Institutes (SUSI) exchange program at University of Massachusetts Amherst",
     caption: "SUSI Exchange • University of Massachusetts Amherst, 2024",
     context: "SUSI International Leadership Fellowship",
     year: "2024",
     section: "international",
-    status: "pending_client_supply",
+    status: "verified",
   },
   journeyMilestone: {
     src: "/images/journey/amin-leadership-session.jpg",
