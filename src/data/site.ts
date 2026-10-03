@@ -4,8 +4,8 @@ export const siteConfig: SiteConfig = {
   name: "Amin Jan",
   role: "Youth Leader • Educator • Community Builder",
   eyebrow: "YOUTH LEADER • EDUCATOR • COMMUNITY BUILDER",
-  headlineMain: "Creating opportunities where young people can",
-  headlineEditorial: "learn, lead, and contribute.",
+  headlineMain: "Creating opportunities",
+  headlineEditorial: "Where young people learn, lead, and create change",
   shortBio:
     "Amin Jan is a youth leader and educator working across leadership, entrepreneurship, community development, education, and youth engagement.",
   location: "Peshawar, Pakistan",

@@ -15,7 +15,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
   name,
   eyebrow = "YOUTH LEADER • EDUCATOR • COMMUNITY BUILDER",
   headlineMain = "Creating opportunities",
-  headlineEditorial = "where young people can learn, lead and contribute.",
+  headlineEditorial = "Where young people learn, lead, and create change",
   shortBio,
   linkedinUrl,
 }) => {
@@ -33,7 +33,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
         Creating <br className="hidden sm:inline" />
         opportunities <br />
         <span className="font-editorial font-normal italic text-[#1769AA] block mt-1 sm:mt-1.5">
-          where young people can learn, lead and contribute.
+          {headlineEditorial}
         </span>
       </h1>
 
