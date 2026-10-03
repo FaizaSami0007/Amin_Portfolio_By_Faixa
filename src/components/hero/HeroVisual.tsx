@@ -29,12 +29,12 @@ export const HeroVisual: React.FC<HeroVisualProps> = ({
         </div>
 
         {/* Floating Verified Quote Card (Bottom-Right) */}
-        <div className="absolute -bottom-5 -right-2 sm:-bottom-7 sm:-right-4 max-w-[230px] sm:max-w-[260px] rounded-xl border border-[#D9E7F2] bg-[#FFFFFF]/95 p-3.5 sm:p-4 shadow-[0_10px_24px_rgba(11,58,99,0.07)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-0.5">
+        <div className="absolute -bottom-5 -right-2 sm:-bottom-7 sm:-right-4 max-w-[240px] sm:max-w-[270px] rounded-xl border border-[#D9E7F2] bg-[#FFFFFF]/95 p-3.5 sm:p-4 shadow-[0_10px_24px_rgba(11,58,99,0.07)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-0.5">
           <div className="flex items-center gap-1.5 text-[#1769AA]">
             <Quote className="h-3.5 w-3.5 fill-[#1769AA]/20 rotate-180" />
           </div>
           <p className="mt-1.5 text-xs font-medium leading-snug text-[#102A43]">
-            &ldquo;I believe in the power of young people to create positive change.&rdquo;
+            &ldquo;I want to create spaces where young people are not only heard, but trusted to lead.&rdquo;
           </p>
           <span className="mt-1.5 block text-[10.5px] font-bold text-[#52677A]">
             — Amin Jan
@@ -44,7 +44,7 @@ export const HeroVisual: React.FC<HeroVisualProps> = ({
         {/* Subtle Top-Right Editorial Annotation */}
         <div className="hidden sm:block absolute -top-3 -left-4 rounded-lg border border-[#D9E7F2] bg-[#FFFFFF]/90 px-3 py-1.5 shadow-xs backdrop-blur-xs">
           <p className="font-editorial italic text-[11px] text-[#0B3A63]">
-            People • Education • Communities
+            Youth • Education • Impact
           </p>
         </div>
       </div>
