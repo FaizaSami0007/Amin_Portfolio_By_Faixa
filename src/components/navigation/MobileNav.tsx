@@ -106,7 +106,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
             Connect on LinkedIn <ArrowUpRight className="h-4 w-4 text-[#DCEEFF]" />
           </a>
           <p className="mt-4 text-center text-xs text-[#52677A]">
-            Youth Leader • Educator • Community Builder
+            Youth Leader • Educator • Program Professional
           </p>
         </div>
       </nav>

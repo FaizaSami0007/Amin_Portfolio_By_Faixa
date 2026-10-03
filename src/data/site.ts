@@ -2,8 +2,8 @@ import type { SiteConfig } from "../types";
 
 export const siteConfig: SiteConfig = {
   name: "Amin Jan",
-  role: "Youth Leader • Educator • Community Builder",
-  eyebrow: "YOUTH LEADER • EDUCATOR • COMMUNITY BUILDER",
+  role: "Youth Leader • Educator • Program Professional",
+  eyebrow: "YOUTH LEADER • EDUCATOR • PROGRAM PROFESSIONAL",
   headlineMain: "Creating opportunities",
   headlineEditorial: "Where young people learn, lead, and create change",
   shortBio:

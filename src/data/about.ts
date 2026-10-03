@@ -24,7 +24,7 @@ export const aboutData: AboutData = {
     {
       id: "who-i-am",
       title: "Who I Am",
-      subtitle: "Educator & Community Builder",
+      subtitle: "Educator & Program Professional",
       content:
         "I am an educator and youth leader based in Peshawar, Pakistan. Over the past several years, my work has focused on creating practical learning environments, coordinating entrepreneurship initiatives, and supporting youth-led community projects.",
       highlight: "Dedicated to building opportunities that outlast any single program or event.",

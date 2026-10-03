@@ -13,7 +13,7 @@ interface HeroContentProps {
 
 export const HeroContent: React.FC<HeroContentProps> = ({
   name,
-  eyebrow = "YOUTH LEADER • EDUCATOR • COMMUNITY BUILDER",
+  eyebrow = "YOUTH LEADER • EDUCATOR • PROGRAM PROFESSIONAL",
   headlineMain = "Creating opportunities",
   headlineEditorial = "Where young people learn, lead, and create change",
   shortBio,
