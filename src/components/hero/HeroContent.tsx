@@ -15,7 +15,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
   name,
   eyebrow = "YOUTH LEADER • EDUCATOR • PROGRAM PROFESSIONAL",
   headlineMain = "Creating opportunities",
-  headlineEditorial = "Where young people learn, lead, and create change",
+  headlineEditorial = "Where young people can learn, lead, and create change",
   shortBio,
   linkedinUrl,
 }) => {
@@ -39,7 +39,8 @@ export const HeroContent: React.FC<HeroContentProps> = ({
 
       {/* Supporting Description */}
       <p className="mt-4 sm:mt-5 max-w-lg text-sm sm:text-base leading-relaxed text-[#52677A]">
-        Amin Jan is a youth leader, educator and community development professional working at the intersection of education, entrepreneurship, climate action and international engagement.
+        {shortBio ||
+          "Amin Jan is a youth leader, educator and program professional working at the intersection of youth development, education, entrepreneurship, climate action and public engagement."}
       </p>
 
       {/* CTA Buttons & Social Icons */}

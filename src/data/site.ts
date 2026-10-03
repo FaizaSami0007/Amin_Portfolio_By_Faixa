@@ -5,9 +5,9 @@ export const siteConfig: SiteConfig = {
   role: "Youth Leader • Educator • Program Professional",
   eyebrow: "YOUTH LEADER • EDUCATOR • PROGRAM PROFESSIONAL",
   headlineMain: "Creating opportunities",
-  headlineEditorial: "Where young people learn, lead, and create change",
+  headlineEditorial: "Where young people can learn, lead, and create change",
   shortBio:
-    "Amin Jan is a youth leader and educator working across leadership, entrepreneurship, community development, education, and youth engagement.",
+    "Amin Jan is a youth leader, educator and program professional working at the intersection of youth development, education, entrepreneurship, climate action and public engagement.",
   location: "Peshawar, Pakistan",
   email: "aminjan5225@gmail.com",
   linkedin: "https://www.linkedin.com/in/amin-jan1/",
