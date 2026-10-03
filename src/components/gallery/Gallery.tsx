@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "../common/Container";
 import { Badge } from "../common/Badge";
-import { Camera, MapPin, Calendar } from "lucide-react";
+import { Camera, MapPin, Calendar, ArrowRight } from "lucide-react";
 import { portfolioImages } from "../../data/images";
 
 export const Gallery: React.FC = () => {
+  const [activeMomentId, setActiveMomentId] = useState<string>("hero-moment");
+
   const galleryItems = [
     {
       id: "hero-moment",
@@ -15,7 +17,6 @@ export const Gallery: React.FC = () => {
       alt: "Amin Jan leading a youth dialogue session",
       caption: "Fostering inclusive leadership pathways and grassroots dialogue among university students.",
       category: "Youth Leadership",
-      isLarge: true,
     },
     {
       id: "pep-moment",
@@ -27,7 +28,6 @@ export const Gallery: React.FC = () => {
       alt: "Amin Jan with leaders and participants at Peshawar Entrepreneurship Program (PEP) certificate ceremony",
       caption: "Interactive hands-on bootcamp mentoring 40+ student entrepreneurs on digital venture creation.",
       category: "Entrepreneurship",
-      isLarge: false,
     },
     {
       id: "susi-moment",
@@ -39,7 +39,6 @@ export const Gallery: React.FC = () => {
       alt: "Amin Jan during the Study of the U.S. Institutes (SUSI) leadership exchange at University of Massachusetts Amherst",
       caption: "Academic seminars on public policy, civic engagement, and leadership frameworks.",
       category: "International Exchange",
-      isLarge: false,
     },
     {
       id: "community-moment",
@@ -50,9 +49,12 @@ export const Gallery: React.FC = () => {
       alt: "Amin Jan interacting with community organizers",
       caption: "Mobilizing volunteer networks for education equity and youth mentorship initiatives.",
       category: "Community Development",
-      isLarge: false,
     },
   ];
+
+  const featuredItem =
+    galleryItems.find((item) => item.id === activeMomentId) || galleryItems[0];
+  const sideItems = galleryItems.filter((item) => item.id !== activeMomentId);
 
   return (
     <section
@@ -80,58 +82,64 @@ export const Gallery: React.FC = () => {
 
           <div className="flex items-center gap-2 text-xs font-semibold text-[#DCEEFF]/80">
             <Camera className="h-4 w-4 text-[#4A9FE3]" />
-            <span>Documentary Photography</span>
+            <span>Click any moment to feature</span>
           </div>
         </div>
 
-        {/* Asymmetrical Curated Editorial Layout */}
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
-          {/* Main Large Feature Card (7 Columns) */}
+        {/* Asymmetrical Curated Interactive Layout */}
+        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8 items-start">
+          {/* Main Large Featured Card (7 Columns) */}
           <div className="lg:col-span-7 flex flex-col">
-            <article className="group relative flex flex-1 flex-col overflow-hidden rounded-[24px] border border-white/15 bg-white/10 p-2 sm:p-3 transition-all duration-300 hover:border-white/30 hover:bg-white/15">
+            <article
+              key={featuredItem.id}
+              className="group relative flex flex-1 flex-col overflow-hidden rounded-[24px] border border-white/20 bg-white/10 p-2.5 sm:p-3 shadow-md transition-all duration-300 hover:border-white/35"
+            >
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[18px] bg-[#082C4A]">
                 <img
-                  src={galleryItems[0].imageSrc}
-                  alt={galleryItems[0].alt}
-                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
+                  src={featuredItem.imageSrc}
+                  alt={featuredItem.alt}
+                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
                   loading="lazy"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="inline-flex items-center rounded-full bg-[#082C4A]/80 px-3 py-1 text-xs font-semibold text-[#DCEEFF] backdrop-blur-md">
-                    {galleryItems[0].category}
+                  <span className="inline-flex items-center rounded-full bg-[#082C4A]/85 px-3 py-1 text-xs font-semibold text-[#DCEEFF] backdrop-blur-md border border-white/10">
+                    {featuredItem.category}
                   </span>
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5">
+              <div className="p-4 sm:p-6">
                 <div className="flex items-center justify-between text-xs text-[#DCEEFF]/80">
-                  <span className="inline-flex items-center gap-1">
+                  <span className="inline-flex items-center gap-1.5">
                     <MapPin className="h-3.5 w-3.5 text-[#4A9FE3]" />
-                    {galleryItems[0].location}
+                    {featuredItem.location}
                   </span>
-                  <span className="inline-flex items-center gap-1 font-semibold">
+                  <span className="inline-flex items-center gap-1.5 font-semibold">
                     <Calendar className="h-3.5 w-3.5 text-[#4A9FE3]" />
-                    {galleryItems[0].year}
+                    {featuredItem.year}
                   </span>
                 </div>
-                <h3 className="mt-2 text-xl font-bold tracking-tight text-[#FFFFFF]">
-                  {galleryItems[0].title}
+                <h3 className="mt-3 text-xl sm:text-2xl font-bold tracking-tight text-[#FFFFFF]">
+                  {featuredItem.title}
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-[#DCEEFF]/85">
-                  {galleryItems[0].caption}
+                <p className="mt-2 text-sm sm:text-base leading-relaxed text-[#DCEEFF]/90">
+                  {featuredItem.caption}
                 </p>
               </div>
             </article>
           </div>
 
-          {/* Right Stack (5 Columns) */}
-          <div className="lg:col-span-5 flex flex-col gap-6">
-            {galleryItems.slice(1).map((item) => (
-              <article
+          {/* Right Stack of Interactive Cards (5 Columns) */}
+          <div className="lg:col-span-5 flex flex-col gap-4 sm:gap-5">
+            {sideItems.map((item) => (
+              <button
                 key={item.id}
-                className="group flex flex-col overflow-hidden rounded-[20px] border border-white/15 bg-white/10 p-2 transition-all duration-300 hover:border-white/30 hover:bg-white/15"
+                type="button"
+                onClick={() => setActiveMomentId(item.id)}
+                className="group flex w-full text-left overflow-hidden rounded-[20px] border border-white/15 bg-white/10 p-2 transition-all duration-200 hover:border-[#4A9FE3] hover:bg-white/15 active:scale-[0.99] focus-visible:outline-2 cursor-pointer shadow-xs"
+                aria-label={`View ${item.title} in main viewer`}
               >
-                <div className="flex flex-col sm:flex-row gap-4 p-3 items-center">
+                <div className="flex w-full flex-col sm:flex-row gap-3.5 p-2.5 items-center">
                   <div className="relative aspect-[4/3] w-full sm:w-36 shrink-0 overflow-hidden rounded-xl bg-[#082C4A]">
                     {item.imageSrc ? (
                       <img
@@ -150,20 +158,24 @@ export const Gallery: React.FC = () => {
                     )}
                   </div>
 
-                  <div className="flex flex-1 flex-col justify-center">
+                  <div className="flex flex-1 flex-col justify-center min-w-0">
                     <div className="flex items-center justify-between text-[11px] text-[#DCEEFF]/70">
-                      <span>{item.category}</span>
+                      <span className="font-semibold text-[#4A9FE3]">{item.category}</span>
                       <span>{item.year}</span>
                     </div>
-                    <h4 className="mt-1 text-base font-bold text-[#FFFFFF]">
+                    <h4 className="mt-1 text-sm sm:text-base font-bold text-[#FFFFFF] group-hover:text-[#DCEEFF] transition-colors line-clamp-1">
                       {item.title}
                     </h4>
                     <p className="mt-1 text-xs leading-relaxed text-[#DCEEFF]/80 line-clamp-2">
                       {item.caption}
                     </p>
+                    <div className="mt-2 flex items-center gap-1 text-[11px] font-semibold text-[#4A9FE3] opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span>Click to view</span>
+                      <ArrowRight className="h-3 w-3" />
+                    </div>
                   </div>
                 </div>
-              </article>
+              </button>
             ))}
           </div>
         </div>
