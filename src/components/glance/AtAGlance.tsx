@@ -21,13 +21,13 @@ export const AtAGlance: React.FC<AtAGlanceProps> = ({ metrics }) => {
             At a Glance
           </Badge>
           <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#102A43] sm:text-4xl lg:text-[40px] leading-tight">
-            Grounded in consistent{" "}
+            Turning participation into{" "}
             <span className="font-editorial font-normal italic text-[#1769AA]">
-              community participation.
+              meaningful impact.
             </span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#52677A] leading-relaxed">
-            Every metric represents tangible engagement—from selective leadership cohorts to direct student mentoring and workshop delivery.
+            Every number reflects real work—from competitive international programs to entrepreneurship initiatives, youth leadership and education.
           </p>
         </div>
 

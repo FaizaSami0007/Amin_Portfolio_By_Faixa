@@ -67,13 +67,13 @@ export const siteConfig: SiteConfig = {
   metrics: [
     {
       value: "5K+",
-      label: "LinkedIn Community",
-      description: "Professionals, students, and civic partners engaged across ongoing initiatives.",
+      label: "LinkedIn Connections",
+      description: "Youth leaders, professionals, entrepreneurs, students, educators, and development partners.",
     },
     {
       value: "20",
       label: "SUSI Cohort Selected",
-      description: "Representing Pakistan in the prestigious U.S. Department of State leadership institute.",
+      description: "Selected from 18,000+ applicants to represent Pakistan in the U.S. Department of State’s SUSI Exchange program.",
     },
     {
       value: "500+",
